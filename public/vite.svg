@@ -1,0 +1,11 @@
+<!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <path d="M19 2H5c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM9 18H7v-2h2v2zm0-4H7v-2h2v2zm0-4H7V8h2v2zm4 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V8h2v2zm4 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V8h2v2z"/>
+</svg> -->
+
+<!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <path fill="#ff0000" d="M19 2H5c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM9 18H7v-2h2v2zm0-4H7v-2h2v2zm0-4H7V8h2v2zm4 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V8h2v2zm4 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V8h2v2z"/>
+</svg> -->
+
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <path fill="#ff0000" d="M20.85,7.15H13.54A1.91,1.91,0,0,0,11.63,6L11.63,4.15a2,2,0,0,0-2-2H4.15A1.91,1.91,0,0,0,2.24,3.15L2.24,20.85a1.91,1.91,0,0,0,1.91,1.91H20.85a1.91,1.91,0,0,0,1.91-1.91V9.06A2,2,0,0,0,20.85,7.15ZM5.09,18.37V5.63h5.63a2,2,0,0,0,0-4H5.09a2,2,0,0,0-2,2V18.37a2,2,0,0,0,2,2H8.4a2,2,0,0,0,0-4H5.09Z"/>
+</svg>
