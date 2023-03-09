@@ -66,7 +66,7 @@ function Home({ fileType }) {
     });
     formData.append("fileType", fileType);
     try {
-      const response = await fetch("http://localhost:5000/merge", {
+      const response = await fetch("https://file-fusion.onrender.com", {
         method: "POST",
         body: formData,
       });
