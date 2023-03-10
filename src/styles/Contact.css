@@ -64,3 +64,14 @@
     box-shadow: 0 0 5px #ddd;
   }
   
+  .block-cursor {
+    cursor: not-allowed;
+    background-color: #e4e0e0;
+    border-color: #e4e0e0;
+  }
+
+  .response{
+    font-size: large;
+    font-weight: bold;
+    color: #2a9d8f;
+  }
