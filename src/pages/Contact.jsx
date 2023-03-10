@@ -7,27 +7,35 @@ function Contact() {
   const [loading, setLoading] = useState(false);
 
   const handleOnChange = (e) => {
-    const [name, value] = e.target;
-    setForm((prev) => {});
+    const {name, value} = e.target;
+    setForm(() => {
+      return {
+        ...form,
+        [name]: value,
+      };
+    });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     setLoading(true);
     e.preventDefault();
-
-    const { name, email, message } = form;
-    const formData = new FormData();
-    formData.append("name", name);
-    formData.append("email", email);
-    formData.append("message", message);
-
-    fetch("https://file-fusion.onrender.com/contact", {
+    console.log(form);
+    const res = await fetch("http://localhost:5000/message", {
       method: "POST",
-      body: formData,
+      headers:{
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(form),
     })
-      .then((res) => res.json())
-      .then(() => setResponse("Response received!"))
-      .catch(() => setResponse("Something went wrong!"));
+
+    const data = await res.json();
+    console.log(data);
+    if(data.success) {
+      setResponse("Message sent successfully");
+      // setForm({ name: "", email: "", message: "" });
+    }else{
+      setResponse("Something went wrong...!");
+    }
     setLoading(false);
   };
 
@@ -63,7 +71,11 @@ function Contact() {
             onChange={handleOnChange}
           ></textarea>
 
-          <input className={loading ? "block-cursor" : null} type="submit" value="Send"/>
+          <input
+            className={loading ? "block-cursor" : null}
+            type="submit"
+            value={!loading ? "Send" : "Sending..."}
+          />
         </form>
       </div>
     </div>
